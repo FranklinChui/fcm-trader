@@ -1,0 +1,22 @@
+[project]
+name = "fcm-trader"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "pydantic-settings",
+    "SQLAlchemy",
+    "psycopg2-binary",
+    "redis",
+    "streamlit",
+    "dramatiq",
+    "structlog",
+    "pytest>=8.4.1",
+]
+
+[tool.setuptools]
+packages = ["app"]
